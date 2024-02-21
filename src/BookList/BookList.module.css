@@ -1,0 +1,50 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+}
+
+img {
+  height: 300px;
+  width: 75%;
+  border-radius: 15px;
+  margin-top: 60px;
+  padding: 10px 10px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.imageContainer:hover {
+  height: 400px;
+  -webkit-box-shadow: -10px -12px 24px -22px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -10px -12px 24px -22px rgba(0, 0, 0, 1);
+  box-shadow: -10px -12px 24px -22px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  background-color: #8d99ae;
+}
+
+h5 {
+  font-size: 20px;
+  width: 75%;
+  text-align: center;
+  padding: 0;
+  margin: 10px;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  text-align: center;
+  cursor: pointer;
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 20px;
+}

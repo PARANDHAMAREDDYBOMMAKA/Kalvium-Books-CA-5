@@ -1,0 +1,86 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logoContainer {
+  margin-left: 5%;
+  margin-top: -2%;
+}
+
+.logoContainer h2 {
+  color: red;
+  -webkit-text-stroke: 1px red;
+}
+
+.logoContainer img {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.searchContainer>input {
+  height: 50px;
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  font-size: 20px;
+  color: brown;
+  margin-left: 100px;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  text-align: center;
+  border-radius: 40px;
+  -webkit-box-shadow: inset -10px -12px 52px -13px rgba(209, 240, 163, 1);
+  -moz-box-shadow: inset -10px -12px 52px -13px rgba(209, 240, 163, 1);
+  box-shadow: inset -10px -12px 52px -13px rgba(209, 240, 163, 1);
+  cursor: auto;
+}
+
+.searchContainer input:hover {
+  -webkit-box-shadow: inset 0px -1px 29px 0px rgba(227, 217, 36, 1);
+  -moz-box-shadow: inset 0px -1px 29px 0px rgba(227, 217, 36, 1);
+  box-shadow: inset 0px -1px 29px 0px rgba(227, 217, 36, 1);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 200px;
+  background-color: #90e0ef;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 82%;
+  text-decoration: none;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btnContainer:hover {
+  -webkit-box-shadow: -10px -12px 63px -13px rgba(131, 218, 230, 1);
+  -moz-box-shadow: -10px -12px 63px -13px rgba(131, 218, 230, 1);
+  box-shadow: -10px -12px 63px -13px rgba(131, 218, 230, 1);
+}
+
+.userName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  color: #e07a5f;
+  position: absolute;
+  top: 10%;
+  left: 82%;
+}
