@@ -36,13 +36,13 @@
 
 .SubmitBtn {
     height: 60px;
-    width: 30%;
+    width: 20%;
     padding: 10px;
     font-size: 25px;
     background-color: #f4d35e;
     position: relative;
-    left: 35%;
-    top: 55%;
+    left: 40%;
+    top: 60%;
     border-radius: 30px;
     border: 0;
     cursor: pointer;
