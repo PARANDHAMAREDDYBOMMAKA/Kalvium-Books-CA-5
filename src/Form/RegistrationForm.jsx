@@ -1,4 +1,3 @@
-// RegistrationForm.jsx
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import styles from "./RegistrationForm.module.css";
@@ -7,27 +6,32 @@ import { TfiApple } from "react-icons/tfi";
 import { IoLogoGithub } from "react-icons/io";
 
 const RegistrationForm = () => {
+  // Destructuring the useForm hook to access form-related functions and state
   const {
-    register,
-    handleSubmit,
+    register, // Function to register input elements with the form
+    handleSubmit, // Function to handle form submission
     formState: { errors, isSubmitSuccessful, isSubmitting },
-    getValues,
+    getValues, // Function to get the current values of form inputs
   } = useForm();
 
+  // Navigate hook for programmatic navigation
   const navigate = useNavigate();
 
+  // Function to handle form submission
   const onSubmit = (data) => {
+    // Simulate a delay before navigating to the home page with user data
     setTimeout(() => {
       navigate("/", { state: { userName: data.name } });
     }, 2000);
   };
 
+  // Function to handle clicking on the logo, navigating to the home page
   const handleOnclick = () => {
     navigate("/");
   };
 
   return (
-    <div className={styles.formContainer}>
+    <div className={styles["formContainer"]}>
       <div>
         <img
           onClick={handleOnclick}
@@ -41,6 +45,7 @@ const RegistrationForm = () => {
           }}
           alt="Logo"
         ></img>
+
         {isSubmitSuccessful ? (
           <h2
             style={{
@@ -69,7 +74,7 @@ const RegistrationForm = () => {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.inputBoxContainer}>
+        <div className={styles["inputBoxContainer"]}>
           <input
             placeholder="Enter your Name"
             type="text"
@@ -126,6 +131,7 @@ const RegistrationForm = () => {
           />
           {errors.repeatPassword && <p>{errors.repeatPassword.message}</p>}
         </div>
+
         <button
           className={styles.SubmitBtn}
           disabled={isSubmitting}
@@ -134,6 +140,7 @@ const RegistrationForm = () => {
           {isSubmitting ? "Loading..." : "Sign Up"}
         </button>
       </form>
+
       <div
         style={{
           height: "10px",
@@ -146,6 +153,7 @@ const RegistrationForm = () => {
           borderBottom: "1px solid rgba(0, 0, 0, 0.359)",
         }}
       ></div>
+
       <p style={{ color: "black", textAlign: "center" }}>
         Or <strong>Sign Up</strong> with
       </p>
